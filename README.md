@@ -21,6 +21,53 @@ Now we can focus on the CAPTCHA. As you can notice there is some noise which we 
 
 So, now we have the image almost cleared and some letters to play with.
 
+<!-- 
+=============================================================
+⚠️ PROPOSAL FOR ADVERTISING / SPONSORSHIP ⚠️
+
+Hi! I'd like to place this advertisement in your repository.
+If you're interested in sponsorship or advertising, please contact me:
+
+📱 Telegram: @keropo
+🔗 LinkedIn: https://www.linkedin.com/in/kirill-ponomarev-k/
+
+This is just a proposal — feel free to reject or modify!
+=============================================================
+-->
+
+<!-- AD -->
+---
+## Sponsors
+
+✅ CapMonster.Cloud — Fast, Reliable CAPTCHA Solving for Automation & Scraping
+
+[![CapMonster Cloud](https://help.zennolab.com/upload/u/02/020538b7c128.png)](https://capmonster.cloud/en/?utm_source=github&utm_campaign=ptigas_simple-captcha-solver)
+
+If you are tired of wasting time solving endless CAPTCHAs during scraping, automation, or testing — we’ve got a solution for you.  
+Meet CapMonster.Cloud — the AI-powered CAPTCHA solving service trusted by thousands of users worldwide. 🚀
+
+--
+
+🔥 **Why users love CapMonster.Cloud**
+  
+💡 Very high success rates (up to 99%)  
+⚡ Super fast solving times  
+💲 Affordable transparent pricing (pay per 1,000 CAPTCHAs)  
+🔌 Easy integration via API + browser extensions  
+⭐ Excellent reviews on TrustPilot, SourceForge, SaaSHub, AlternativeTo
+
+--
+
+🔗 **Useful Links**
+
+💲 [Pricing & Supported CAPTCHA Types (25+ types supported)](https://capmonster.cloud/en?utm_source=github&utm_campaign=ptigas_simple-captcha-solver#new-plans)  
+📘 [API Documentation](https://docs.capmonster.cloud/?utm_source=github&utm_campaign=ptigas_simple-captcha-solver)  
+💡 Main Website → [capmonster.cloud](https://capmonster.cloud/en/?utm_source=github&utm_campaign=ptigas_simple-captcha-solver)  
+⭐ Reviews → [TrustPilot](https://www.trustpilot.com/review/capmonster.cloud)
+
+---
+<!-- /AD -->
+
 ## Procedure
 
 Move each letter across the image and take the difference of the pixels for each position and sum them. Thus for each position we have a score of how much the letter (mask) fits the letter behind it. Then, store for each letter the position where the maximum score found. Then sort by score, take the top five results (our captcha is five letters) and finally sort by position. The result is the CAPTCHA text.
